@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+    <link rel="stylesheet" href="../style.css">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCtueefN6aPJNUoZ3eJ2VEjr_jQE09s4v0",
+    authDomain: "hackathon-6a93d.firebaseapp.com",
+    projectId: "hackathon-6a93d",
+    storageBucket: "hackathon-6a93d.appspot.com",
+    messagingSenderId: "393164203882",
+    appId: "1:393164203882:web:79d79b9ef0ac0ec4162713",
+    measurementId: "G-JC60TWZTM0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+
+    <div class="main-block">
+        <h1>Registration</h1>
+        <form action="/">
+          <!-- <hr>
+          <div class="account-type">
+            <input type="radio" value="none" id="radioOne" name="account" checked/>
+            <label for="radioOne" class="radio">User</label>
+            <input type="radio" value="none" id="radioTwo" name="account" />
+            <label for="radioTwo" class="radio">Restaurant</label>
+          </div>
+          <hr> -->
+          <!-- <label id="icon" for="name"><i class="fas fa-envelope"></i></label> -->
+          <input type="text" name="name" id="email" placeholder="Email" required/>
+
+          <!-- <label id="icon" for="name"><i class="fas fa-user"></i></label> -->
+          <input type="text" name="name" id="name" placeholder="Username/Restaurant name" required/>
+
+          <!-- <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label> -->
+          <input type="password" name="name" id="password" placeholder="Password" required/>
+
+            <!-- <label id="icon" for="number"><i class="fas fa-number"></i></label> -->
+          <input type="number" name="number" id="number" placeholder="Number" required/>
+        
+          <input type="text" name="country" id="country" placeholder="country" required/>
+          <input type="text" name="city" id="city" placeholder="city" required/>
+          <hr>
+      
+
+
+
+          <!-- <div class="gender">
+            <input type="radio" value="none" id="male" name="gender" checked/>
+            <label for="male" class="radio">Male</label>
+            <input type="radio" value="none" id="female" name="gender" />
+            <label for="female" class="radio">Female</label>
+          </div>
+          <hr> -->
+
+           
+            <!-- <button onclick="signupUser()">signup</button> -->
+           
+            <button onclick="signupUser()" href="/"> <a href="../order.html"> signup as user</a></button>
+            <button onclick="signupRestaurant()" href="/"> <a href="../restaurant.html"> signup as Restaurant</a></button>
+           Have an account? <a href="signin.html">signin </a>
+          </div>
+        </form>
+      </div>
+
+
+<!-- <div class="main-div">
+<div>
+   <label > Email: <input type="email" name="email" id="email" placeholder="Enter Email"></label>
+    <br/>
+   <label >password: <input type="password" name="password" id="password" placeholder="Enter password"></label> 
+    <br/>
+
+    <label >Full Name: <input type="text" name="" id="" placeholder="Enter your Full name"></label> 
+    <br/>
+
+    <label >Country: <input type="text" name="" id="" placeholder="Enter your country"></label> 
+    <br/>
+
+    <label >City: <input type="text" name="" id="" placeholder="Enter your city"></label> 
+    <br/>
+</div>
+
+</div>
+
+ 
+ <button onclick="signupUser()">signup</button>
+ <br/>
+
+<!-- 
+ <button onclick="signin()">signin</button>
+ <button onclick="signout()">signout</button> -->
+
+ 
+
+
+
+
+ <!-- <div class="main">
+    Email : <input type="email" id="mail"><br><br>
+    Password: <input type="password" id="password">
+</div>
+
+<button onclick="submitBtn()">Submit</button> -->
+
+<script src="../app.js"></script>
+</body>
+</html>
